@@ -5,7 +5,7 @@ class generator:
 		words = raw_input("input the letters\n")
 		letters = []	
 
-	def sort_words():		#Puts the words into an array
+	def append_words():		#Puts the words into an array
 		i = 0
 		for word in words:
 			letters.append(word)
@@ -13,4 +13,4 @@ class generator:
 			i = i + 1	
 	
 	get_words()
-	sort_words()
+	append_words()

@@ -1,27 +1,27 @@
+solution = []
+letters = []
+path = open("/usr/share/dict/words" , "r")
+
 class generator:
 	def get_words():		#Grabs the words
 		global words
-		global letters
 		words = raw_input("input the letters\n")
-		letters = []	
-
+			
 	def append_words():		#Puts the words into an array
 		i = 0
 		for word in words:
 			letters.append(word)
-			print letters[i]
 			i = i + 1	
 	
-	def get_dictionary():
-		path = "/usr/share/dict/words"
-	
-	def gen_words():
+	def gen_words():		#Generates the words
 		temp = ""
 		length = len(letters)
 		i = 0
 		for i in range(len(letters) - 1):
-			temp = letters[i] + letters[i + 1]
-			print temp
+			if letters[i] != "a":
+				print letters[i]
+			else:
+				print "_"
 			i = i + 1
 			
 	get_words()
